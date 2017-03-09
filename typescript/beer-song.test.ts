@@ -1,76 +1,61 @@
-<?php
+import Beer from './beer-song'
 
-require "beer-song.php";
+describe('Beer', () => {
 
-class BeerSongTest extends PHPUnit\Framework\TestCase
-{
-    public function testFirstVerse()
-    {
-        $expected = "99 bottles of beer on the wall, 99 bottles of beer.\n" .
-            "Take one down and pass it around, 98 bottles of beer on the wall.\n";
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->verse(99));
-    }
+  it('prints an arbitrary verse', () => {
+    const expected = `8 bottles of beer on the wall, 8 bottles of beer.
+Take one down and pass it around, 7 bottles of beer on the wall.
+`
 
-    public function testVerse2()
-    {
-        $this->markTestSkipped();
-        $expected = "2 bottles of beer on the wall, 2 bottles of beer.\n" .
-            "Take one down and pass it around, 1 bottle of beer on the wall.\n";
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->verse(2));
-    }
+    expect(Beer.verse(8)).toEqual(expected)
+  })
 
-    public function testVerse1()
-    {
-        $this->markTestSkipped();
-        $expected = "1 bottle of beer on the wall, 1 bottle of beer.\n" .
-            "Take it down and pass it around, no more bottles of beer on the wall.\n";
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->verse(1));
-    }
+  it('handles 1 bottle', () => {
+    const expected = `1 bottle of beer on the wall, 1 bottle of beer.
+Take it down and pass it around, no more bottles of beer on the wall.
+`
+    expect(Beer.verse(1)).toEqual(expected)
+  })
 
-    public function testVerse0()
-    {
-        $this->markTestSkipped();
-        $expected = "No more bottles of beer on the wall, no more bottles of beer.\n" .
-            "Go to the store and buy some more, 99 bottles of beer on the wall.";
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->verse(0));
-    }
+  it('handles 0 bottles', () => {
+    const expected = `No more bottles of beer on the wall, no more bottles of beer.
+Go to the store and buy some more, 99 bottles of beer on the wall.
+`
+    expect(Beer.verse(0)).toEqual(expected)
+  })
 
-    public function testACoupleVerses()
-    {
-        $this->markTestSkipped();
-        $expected = "99 bottles of beer on the wall, 99 bottles of beer.\n" .
-            "Take one down and pass it around, 98 bottles of beer on the wall.\n" .
-            "\n" .
-            "98 bottles of beer on the wall, 98 bottles of beer.\n" .
-            "Take one down and pass it around, 97 bottles of beer on the wall.\n";
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->verses(99, 98));
-    }
+  it('sings several verses', () => {
+    const expected = `8 bottles of beer on the wall, 8 bottles of beer.
+Take one down and pass it around, 7 bottles of beer on the wall.
 
-    public function testAFewVerses()
-    {
-        $this->markTestSkipped();
-        $expected = "2 bottles of beer on the wall, 2 bottles of beer.\n" .
-            "Take one down and pass it around, 1 bottle of beer on the wall.\n" .
-            "\n" .
-            "1 bottle of beer on the wall, 1 bottle of beer.\n" .
-            "Take it down and pass it around, no more bottles of beer on the wall.\n" .
-            "\n" .
-            "No more bottles of beer on the wall, no more bottles of beer.\n" .
-            "Go to the store and buy some more, 99 bottles of beer on the wall.";
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->verses(2, 0));
-    }
+7 bottles of beer on the wall, 7 bottles of beer.
+Take one down and pass it around, 6 bottles of beer on the wall.
 
-    public function testWholeSong()
-    {
-        $this->markTestSkipped();
-        $expected = <<<SONG
-99 bottles of beer on the wall, 99 bottles of beer.
+6 bottles of beer on the wall, 6 bottles of beer.
+Take one down and pass it around, 5 bottles of beer on the wall.
+`
+    expect(Beer.sing(8, 6)).toEqual(expected)
+  })
+
+  it('sings the rest of the verses', () => {
+    const expected = `3 bottles of beer on the wall, 3 bottles of beer.
+Take one down and pass it around, 2 bottles of beer on the wall.
+
+2 bottles of beer on the wall, 2 bottles of beer.
+Take one down and pass it around, 1 bottle of beer on the wall.
+
+1 bottle of beer on the wall, 1 bottle of beer.
+Take it down and pass it around, no more bottles of beer on the wall.
+
+No more bottles of beer on the wall, no more bottles of beer.
+Go to the store and buy some more, 99 bottles of beer on the wall.
+`
+    expect(Beer.sing(3)).toEqual(expected)
+  })
+
+  it('sings all the verses', () => {
+    const song = Beer.sing()
+    expect(song).toEqual(`99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
 98 bottles of beer on the wall, 98 bottles of beer.
@@ -369,8 +354,7 @@ Take it down and pass it around, no more bottles of beer on the wall.
 
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
-SONG;
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->lyrics());
-    }
-}
+`)
+  })
+
+})

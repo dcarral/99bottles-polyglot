@@ -45,3 +45,4 @@ be added by emailing Katrina Owen at katrina.owen@gmail.com.
 - ruby
 - rust
 - swift
+- typescript

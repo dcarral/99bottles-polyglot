@@ -1,75 +1,10 @@
-<?php
+# Beer Song
 
-require "beer-song.php";
+Produce the lyrics to that beloved classic, that field-trip favorite: 99 Bottles of Beer on the Wall.
 
-class BeerSongTest extends PHPUnit\Framework\TestCase
-{
-    public function testFirstVerse()
-    {
-        $expected = "99 bottles of beer on the wall, 99 bottles of beer.\n" .
-            "Take one down and pass it around, 98 bottles of beer on the wall.\n";
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->verse(99));
-    }
+Note that not all verses are identical.
 
-    public function testVerse2()
-    {
-        $this->markTestSkipped();
-        $expected = "2 bottles of beer on the wall, 2 bottles of beer.\n" .
-            "Take one down and pass it around, 1 bottle of beer on the wall.\n";
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->verse(2));
-    }
-
-    public function testVerse1()
-    {
-        $this->markTestSkipped();
-        $expected = "1 bottle of beer on the wall, 1 bottle of beer.\n" .
-            "Take it down and pass it around, no more bottles of beer on the wall.\n";
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->verse(1));
-    }
-
-    public function testVerse0()
-    {
-        $this->markTestSkipped();
-        $expected = "No more bottles of beer on the wall, no more bottles of beer.\n" .
-            "Go to the store and buy some more, 99 bottles of beer on the wall.";
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->verse(0));
-    }
-
-    public function testACoupleVerses()
-    {
-        $this->markTestSkipped();
-        $expected = "99 bottles of beer on the wall, 99 bottles of beer.\n" .
-            "Take one down and pass it around, 98 bottles of beer on the wall.\n" .
-            "\n" .
-            "98 bottles of beer on the wall, 98 bottles of beer.\n" .
-            "Take one down and pass it around, 97 bottles of beer on the wall.\n";
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->verses(99, 98));
-    }
-
-    public function testAFewVerses()
-    {
-        $this->markTestSkipped();
-        $expected = "2 bottles of beer on the wall, 2 bottles of beer.\n" .
-            "Take one down and pass it around, 1 bottle of beer on the wall.\n" .
-            "\n" .
-            "1 bottle of beer on the wall, 1 bottle of beer.\n" .
-            "Take it down and pass it around, no more bottles of beer on the wall.\n" .
-            "\n" .
-            "No more bottles of beer on the wall, no more bottles of beer.\n" .
-            "Go to the store and buy some more, 99 bottles of beer on the wall.";
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->verses(2, 0));
-    }
-
-    public function testWholeSong()
-    {
-        $this->markTestSkipped();
-        $expected = <<<SONG
+```plain
 99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
@@ -369,8 +304,24 @@ Take it down and pass it around, no more bottles of beer on the wall.
 
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
-SONG;
-        $song = new BeerSong();
-        $this->assertEquals($expected, $song->lyrics());
-    }
-}
+```
+
+## For bonus points
+
+Did you get the tests passing and the code clean? If you want to, these
+are some additional things you could try:
+
+* Remove as much duplication as you possibly can.
+* Optimize for readability, even if it means introducing duplication.
+* If you've removed all the duplication, do you have a lot of
+  conditionals? Try replacing the conditionals with polymorphism, if it
+  applies in this language. How readable is it?
+
+Then please share your thoughts in a comment on the submission. Did this
+experiment make the code better? Worse? Did you learn anything from it?
+
+## Source
+
+Learn to Program by Chris Pine [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
+
+
