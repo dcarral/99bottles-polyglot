@@ -4,8 +4,8 @@ GEM
     org-ruby (0.9.12)
       rubypants (~> 0.2)
     rubypants (0.6.0)
-    rubyzip (1.2.0)
-    trackler (2.0.6.34)
+    rubyzip (1.2.1)
+    trackler (2.0.8.19)
       org-ruby (~> 0.9.0)
       rubyzip (~> 1.1)
 
