@@ -320,6 +320,9 @@ are some additional things you could try:
 Then please share your thoughts in a comment on the submission. Did this
 experiment make the code better? Worse? Did you learn anything from it?
 
+## Hints
+- Try to capture the structure of the song in your code, where you build up the song by composing its parts.
+
 ## Source
 
 Learn to Program by Chris Pine [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
