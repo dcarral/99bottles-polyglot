@@ -320,6 +320,15 @@ are some additional things you could try:
 Then please share your thoughts in a comment on the submission. Did this
 experiment make the code better? Worse? Did you learn anything from it?
 
+## Running the tests
+
+To run the tests, run the command `busted .` from within the exercise directory.
+
+## Further information
+
+For more detailed information about the Lua track, including how to get help if
+you're having trouble, please visit the exercism.io [Lua language page](http://exercism.io/languages/lua/about).
+
 ## Source
 
 Learn to Program by Chris Pine [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)

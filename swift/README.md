@@ -320,6 +320,12 @@ are some additional things you could try:
 Then please share your thoughts in a comment on the submission. Did this
 experiment make the code better? Worse? Did you learn anything from it?
 
+## Setup
+
+Go through the project setup instructions for Xcode using Swift:
+
+http://exercism.io/languages/swift
+
 ## Source
 
 Learn to Program by Chris Pine [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)

@@ -320,6 +320,19 @@ are some additional things you could try:
 Then please share your thoughts in a comment on the submission. Did this
 experiment make the code better? Worse? Did you learn anything from it?
 
+## Making the Test Suite Pass
+
+1. Get [PHPUnit].
+
+        % wget --no-check-certificate https://phar.phpunit.de/phpunit.phar
+        % chmod +x phpunit.phar
+
+2. Execute the tests for an assignment.
+
+        % phpunit.phar wordy/wordy_test.php
+
+[PHPUnit]: http://phpunit.de
+
 ## Source
 
 Learn to Program by Chris Pine [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)

@@ -320,6 +320,29 @@ are some additional things you could try:
 Then please share your thoughts in a comment on the submission. Did this
 experiment make the code better? Worse? Did you learn anything from it?
 
+## Setup
+
+Go through the setup instructions for TypeScript to
+install the necessary dependencies:
+
+http://exercism.io/languages/typescript
+
+## Requirements
+
+Install assignment dependencies:
+
+```bash
+$ yarn install
+```
+
+## Making the test suite pass
+
+Execute the tests with:
+
+```bash
+$ yarn test
+```
+
 ## Source
 
 Learn to Program by Chris Pine [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
