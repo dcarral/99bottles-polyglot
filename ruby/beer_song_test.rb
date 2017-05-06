@@ -1,9 +1,8 @@
 #!/usr/bin/env ruby
-gem 'minitest', '>= 5.0.0'
 require 'minitest/autorun'
 require_relative 'beer_song'
 
-# Common test data version: 9f3d48a
+# Common test data version: 1.0.0 9f3d48a
 class BeerSongTest < Minitest::Test
   def test_first_generic_verse
     # skip
