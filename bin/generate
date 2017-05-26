@@ -21,7 +21,7 @@ Trackler.implementations['beer-song'].each do |implementation|
   exercise_dir = File.join(root, implementation.track_id)
   FileUtils.mkdir_p exercise_dir
 
-  implementation.file_bundle.paths.each do |path|
+  implementation.send(:file_bundle).paths.each do |path|
     FileUtils.cp path, exercise_dir
   end
 
