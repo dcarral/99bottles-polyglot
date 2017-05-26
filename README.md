@@ -44,5 +44,6 @@ be added by emailing Katrina Owen at katrina.owen@gmail.com.
 - python
 - ruby
 - rust
+- scala
 - swift
 - typescript
