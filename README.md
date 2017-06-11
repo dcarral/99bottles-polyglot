@@ -47,3 +47,4 @@ be added by emailing Katrina Owen at katrina.owen@gmail.com.
 - scala
 - swift
 - typescript
+- vimscript
