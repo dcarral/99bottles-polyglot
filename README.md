@@ -42,6 +42,7 @@ be added by emailing Katrina Owen at katrina.owen@gmail.com.
 - perl5
 - pony
 - python
+- r
 - ruby
 - rust
 - scala
