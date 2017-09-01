@@ -23,7 +23,7 @@ be added by emailing Katrina Owen at katrina.owen@gmail.com.
 - cpp
 - clojure
 - coffeescript
-- lisp
+- common-lisp
 - delphi
 - ecmascript
 - elixir
