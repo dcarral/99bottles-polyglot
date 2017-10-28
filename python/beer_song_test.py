@@ -45,7 +45,7 @@ class BeerTest(unittest.TestCase):
             "6 bottles of beer on the wall.\n\n"
             "6 bottles of beer on the wall, 6 bottles of beer.\n"
             "Take one down and pass it around, "
-            "5 bottles of beer on the wall.\n\n"
+            "5 bottles of beer on the wall.\n"
         )
 
     def test_singing_three_last_verses(self):
@@ -62,7 +62,7 @@ class BeerTest(unittest.TestCase):
             "no more bottles of beer on the wall.\n\n"
             "No more bottles of beer on the wall, no more bottles of beer.\n"
             "Go to the store and buy some more, "
-            "99 bottles of beer on the wall.\n\n"
+            "99 bottles of beer on the wall.\n"
         )
 
 if __name__ == '__main__':
