@@ -34,7 +34,7 @@ class BeerTest(unittest.TestCase):
             "99 bottles of beer on the wall.\n"
         )
 
-    def test_songing_several_verses(self):
+    def test_singing_several_verses(self):
         self.assertEqual(
             verses(8, 6),
             "8 bottles of beer on the wall, 8 bottles of beer.\n"
