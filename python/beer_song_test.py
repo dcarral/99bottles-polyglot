@@ -50,7 +50,7 @@ class BeerTest(unittest.TestCase):
 
     def test_song_all_the_rest_of_the_verses(self):
         self.assertEqual(
-            verses(3),
+            verses(3, 0),
             "3 bottles of beer on the wall, 3 bottles of beer.\n"
             "Take one down and pass it around, "
             "2 bottles of beer on the wall.\n\n"
