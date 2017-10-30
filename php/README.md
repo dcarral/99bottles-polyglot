@@ -317,9 +317,6 @@ are some additional things you could try:
   conditionals? Try replacing the conditionals with polymorphism, if it
   applies in this language. How readable is it?
 
-Then please share your thoughts in a comment on the submission. Did this
-experiment make the code better? Worse? Did you learn anything from it?
-
 ## Making the Test Suite Pass
 
 1. Get [PHPUnit].
@@ -327,16 +324,13 @@ experiment make the code better? Worse? Did you learn anything from it?
         % wget --no-check-certificate https://phar.phpunit.de/phpunit.phar
         % chmod +x phpunit.phar
 
-2. Execute the tests for an assignment.
+2. Execute the tests.
 
-        % phpunit.phar wordy/wordy_test.php
+        % phpunit.phar beer-song_test.php
 
 [PHPUnit]: http://phpunit.de
 
 
-## Source
+## Original source
 
 Learn to Program by Chris Pine [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
-
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
