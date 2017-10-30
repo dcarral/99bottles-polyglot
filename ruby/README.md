@@ -317,13 +317,6 @@ are some additional things you could try:
   conditionals? Try replacing the conditionals with polymorphism, if it
   applies in this language. How readable is it?
 
-Then please share your thoughts in a comment on the submission. Did this
-experiment make the code better? Worse? Did you learn anything from it?
-
-* * * *
-
-For installation and learning resources, refer to the
-[exercism help page](http://exercism.io/languages/ruby).
 
 For running the tests provided, you will need the Minitest gem. Open a
 terminal window and run the following command to install minitest:
@@ -335,19 +328,15 @@ the test file, or note the alternative instruction, below, for running
 the test file.
 
 In order to run the test, you can run the test file from the exercise
-directory. For example, if the test suite is called
-`hello_world_test.rb`, you can run the following command:
+directory:
 
-    ruby hello_world_test.rb
+    ruby beer_song_test.rb
 
 To include color from the command line:
 
-    ruby -r minitest/pride hello_world_test.rb
+    ruby -r minitest/pride beer_song_test.rb
 
 
-## Source
+## Original source
 
 Learn to Program by Chris Pine [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
-
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
