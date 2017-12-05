@@ -3,6 +3,12 @@
 99 Bottles of Beer is an algorithmic children's song which has just enough
 complexity to teach you deep truths about object oriented programming.
 
+These are companion exercises to the book https://www.sandimetz.com/99bottles
+The book uses Ruby, however the ideas are applicable to many languages.
+
+Each exercise consists of a test suite. No implementation is provided.
+This is intentional, as we believe that there is value in spending 30 minutes writing your own solution before progressing through the exercises in the book.
+
 ## Source
 
 The implementations of this exercise come from Exercism (http://exercism.io).
