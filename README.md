@@ -14,7 +14,7 @@ listed below, please add them in their respective language tracks on Exercism
 (https://github.com/exercism/docs/blob/master/you-can-help/implement-an-exercise-from-specification.md).
 
 If the language track does not exist (yet), you can request that a new track
-be added by emailing Katrina Owen at katrina.owen@gmail.com.
+be added by opening an issue in https://github.com/exercism/request-new-language-track.
 
 ## Supported Languages
 
