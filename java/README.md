@@ -322,7 +322,7 @@ are some additional things you could try:
 You can run the test suite by entering
 
 ```sh
-$ gradle test
+$ ./gradlew test
 ```
 
 in your terminal.
