@@ -317,6 +317,19 @@ are some additional things you could try:
   conditionals? Try replacing the conditionals with polymorphism, if it
   applies in this language. How readable is it?
 
+# Create IDE project
+
+for intellij run
+
+```sh
+$ ./gradlew idea
+```
+
+for eclipse run
+
+```sh
+$ ./gradlew eclipse
+```
 # Running the tests
 
 You can run the test suite by entering
