@@ -10,11 +10,7 @@ This repository contains the initial test suite in a bunch of programming langua
   - ... are ready to go.
 5. Happy hacking! ;)
 
-## 99 Bottles of Beer
+## Original sources
 
-99 Bottles of Beer is an algorithmic children's song which has just enough
-complexity to teach you deep truths about object oriented programming.
-
-## Original source
-
-The upstream repository by Sandi Metz, available at https://github.com/sandimetz/99bottles-polyglot.
+- Assignment: “A Few Things to Try” section @ [“Learn to Program by Chris Pine”](http://pine.fm/LearnToProgram/?Chapter=06).
+- Initial test suites @ [upstream repository by Sandi Metz](https://github.com/sandimetz/99bottles-polyglot)
