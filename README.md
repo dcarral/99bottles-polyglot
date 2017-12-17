@@ -18,37 +18,3 @@ complexity to teach you deep truths about object oriented programming.
 ## Original source
 
 The upstream repository by Sandi Metz, available at https://github.com/sandimetz/99bottles-polyglot.
-
-## Supported Languages
-
-- c
-- csharp
-- cpp
-- clojure
-- coffeescript
-- common-lisp
-- delphi
-- ecmascript
-- elixir
-- erlang
-- fsharp
-- go
-- haskell
-- java
-- javascript
-- kotlin
-- lfe
-- lua
-- ocaml
-- objective-c
-- php
-- perl5
-- pony
-- python
-- r
-- ruby
-- rust
-- scala
-- swift
-- typescript
-- vimscript
