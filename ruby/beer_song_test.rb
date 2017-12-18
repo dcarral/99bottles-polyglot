@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require 'minitest/pride'
+require 'minitest/pride' # Colored output
 
 class BeerSongTest < Minitest::Test
 

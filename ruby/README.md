@@ -11,15 +11,7 @@ terminal window and run the following command to install minitest:
 
     gem install minitest
 
-If you would like color output, you can `require 'minitest/pride'` in
-the test file, or note the alternative instruction, below, for running
-the test file.
-
 In order to run the test, you can run the test file from the exercise
 directory:
 
     ruby beer_song_test.rb
-
-To include color from the command line:
-
-    ruby -r minitest/pride beer_song_test.rb
