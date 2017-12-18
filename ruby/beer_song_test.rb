@@ -377,7 +377,7 @@ Take it down and pass it around, no more bottles of beer on the wall.
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
 TEXT
-    assert_equal expected, BeerSong.new.verses(99, 0)
+    assert_equal expected, BeerSong.new.lyrics
   end
 
 end
