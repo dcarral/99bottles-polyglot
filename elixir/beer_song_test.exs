@@ -39,7 +39,7 @@ defmodule BeerSongTest do
 
   @tag :pending
   test "getting the last 4 verses" do
-    assert BeerSong.lyrics(3..0) == """
+    assert BeerSong.verses(3..0) == """
     3 bottles of beer on the wall, 3 bottles of beer.
     Take one down and pass it around, 2 bottles of beer on the wall.
 
