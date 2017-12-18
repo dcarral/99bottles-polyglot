@@ -1,6 +1,4 @@
-if !System.get_env("EXERCISM_TEST_EXAMPLES") do
-  Code.load_file("beer_song.exs", __DIR__)
-end
+Code.load_file("beer_song.exs", __DIR__)
 
 ExUnit.start
 ExUnit.configure exclude: :pending, trace: true
