@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require 'minitest/pride'
+require 'minitest/pride' # Colored output
 
 class BeerSongTest < Minitest::Test
 
@@ -8,6 +8,7 @@ class BeerSongTest < Minitest::Test
 99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 TEXT
+
     assert_equal expected, BeerSong.new.verse(99)
   end
 
@@ -17,6 +18,7 @@ TEXT
 3 bottles of beer on the wall, 3 bottles of beer.
 Take one down and pass it around, 2 bottles of beer on the wall.
 TEXT
+
     assert_equal expected, BeerSong.new.verse(3)
   end
 
@@ -26,6 +28,7 @@ TEXT
 2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.
 TEXT
+
     assert_equal expected, BeerSong.new.verse(2)
   end
 
@@ -35,6 +38,7 @@ TEXT
 1 bottle of beer on the wall, 1 bottle of beer.
 Take it down and pass it around, no more bottles of beer on the wall.
 TEXT
+
     assert_equal expected, BeerSong.new.verse(1)
   end
 
@@ -44,6 +48,7 @@ TEXT
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
 TEXT
+
     assert_equal expected, BeerSong.new.verse(0)
   end
 
@@ -56,6 +61,7 @@ Take one down and pass it around, 98 bottles of beer on the wall.
 98 bottles of beer on the wall, 98 bottles of beer.
 Take one down and pass it around, 97 bottles of beer on the wall.
 TEXT
+
     assert_equal expected, BeerSong.new.verses(99, 98)
   end
 
@@ -71,6 +77,7 @@ Take it down and pass it around, no more bottles of beer on the wall.
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
 TEXT
+
     assert_equal expected, BeerSong.new.verses(2, 0)
   end
 
@@ -377,7 +384,8 @@ Take it down and pass it around, no more bottles of beer on the wall.
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
 TEXT
-    assert_equal expected, BeerSong.new.verses(99, 0)
+
+    assert_equal expected, BeerSong.new.lyrics
   end
 
 end

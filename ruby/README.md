@@ -6,20 +6,18 @@ Our goal is to produce the lyrics to that beloved classic, that field-trip favor
 
 ## Running the test suite
 
-For running the provided tests, you will need the Minitest gem. Open a
-terminal window and run the following command to install minitest:
+For running the provided tests, [minitest](https://github.com/seattlerb/minitest) needs to be installed. Open a
+terminal window and run the following command to install it:
 
-    gem install minitest
+```sh
+  gem install minitest
+```
 
-If you would like color output, you can `require 'minitest/pride'` in
-the test file, or note the alternative instruction, below, for running
-the test file.
+You can run the test suite from the exercise
+directory with:
 
-In order to run the test, you can run the test file from the exercise
-directory:
+```sh
+  ruby beer_song_test.rb
+```
 
-    ruby beer_song_test.rb
-
-To include color from the command line:
-
-    ruby -r minitest/pride beer_song_test.rb
+Notice that all but the first test have been skipped. Once you get a test passing, you can unskip the next one by removing `skip` from its body.

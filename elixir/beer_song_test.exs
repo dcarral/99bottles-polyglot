@@ -1,6 +1,4 @@
-if !System.get_env("EXERCISM_TEST_EXAMPLES") do
-  Code.load_file("beer_song.exs", __DIR__)
-end
+Code.load_file("beer_song.exs", __DIR__)
 
 ExUnit.start
 ExUnit.configure exclude: :pending, trace: true
@@ -41,7 +39,7 @@ defmodule BeerSongTest do
 
   @tag :pending
   test "getting the last 4 verses" do
-    assert BeerSong.lyrics(3..0) == """
+    assert BeerSong.verses(3..0) == """
     3 bottles of beer on the wall, 3 bottles of beer.
     Take one down and pass it around, 2 bottles of beer on the wall.
 

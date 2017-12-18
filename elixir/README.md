@@ -9,10 +9,8 @@ Our goal is to produce the lyrics to that beloved classic, that field-trip favor
 Execute the tests with:
 
 ```bash
-$ elixir bob_test.exs
+$ elixir beer_song_test.exs
 ```
-
-(Replace `bob_test.exs` with the name of the test file.)
 
 ### Pending tests
 
