@@ -1,0 +1,18 @@
+{
+    "name": "swkberlin/kata",
+    "authors": [
+        {
+            "name": "damijanc",
+            "email": "damijan@cavar.si"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Kata\\": "src/",
+            "Kata\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^6.4"
+    }
+}
