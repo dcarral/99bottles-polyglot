@@ -7,6 +7,7 @@ Our goal is to produce the lyrics to that beloved classic, that field-trip favor
 ## Running
 
 To run the environment is necessary `Docker`.
+
 In `js` directory run:
 
 ```sh
