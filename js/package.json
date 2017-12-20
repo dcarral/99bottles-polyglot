@@ -1,0 +1,11 @@
+{
+  "name": "99_bottles_beer-TEST",
+  "version": "1.0.0",
+  "description": "Challenge for 99 bootles of beer song",
+  "main": "beer-song.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT"
+}
