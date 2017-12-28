@@ -12,7 +12,7 @@
 
 (def verse-2
   (str "2 bottles of beer on the wall, 2 bottles of beer.\n"
-       "Take one down and pass it around, 1 bottle of beer on the wall.\n"))
+       "Take one down and pass it around, 1 bottle of beer on the wall.\n\n"))
 
 (def verse-1
   (str "1 bottle of beer on the wall, 1 bottle of beer.\n"
@@ -250,3 +250,6 @@
 (deftest test-verses
   (is (= song-99-97 (beer-song/verses 99 97)))
   (is (= song-2-0 (beer-song/verses 2 0))))
+
+(deftest test-sing
+  (is (= full-song (beer-song/sing))))
