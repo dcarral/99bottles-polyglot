@@ -4,15 +4,38 @@
 
 Our goal is to produce the lyrics to that beloved classic, that field-trip favorite. You can find them @ [`dcarral/99bottles-polyglot/SONG_LYRICS.md`](https://github.com/dcarral/99bottles-polyglot/blob/master/SONG_LYRICS.md).
 
-## Running the Test Suite
+phpunit setup
+==========
 
-1. Get [PHPUnit].
+Easiest way to set up the PHP suite is by using the Composer:
 
-        % wget --no-check-certificate https://phar.phpunit.de/phpunit.phar
-        % chmod +x phpunit.phar
+[https://getcomposer.org/download/](https://getcomposer.org/download/)
 
-2. Execute the tests.
+This is a simple bootstrap project for PHP with phpunit
 
-        % phpunit.phar beer-song_test.php
+For PHP 5.6 or above just run:
 
-[PHPUnit]: http://phpunit.de
+```
+composer install
+
+```
+
+To run the tests just run:
+
+```
+./vendor/bin/phpunit
+
+```
+You need PHP 5.6 or above to run it since we have phpunit 5.2.
+
+
+If you have legacy version of php please change composer.json file
+and include the version that is compatible with you version of PHP
+
+
+If you change the phpunit version do not forget to run:
+
+```
+./composer update --with-dependencies
+
+```
